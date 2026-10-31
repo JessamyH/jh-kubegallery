@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Terraform: state can hold secrets and IDs, tfvars hold local settings — never commit
+# (.terraform.lock.hcl is committed on purpose so provider versions stay pinned)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Media samples: keep the folder, not the files
+samples/*
+!samples/.gitkeep
