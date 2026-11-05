@@ -1,6 +1,6 @@
 # app
 
-Python + FFmpeg media pipeline, packaged as a container and run as a Kubernetes Job.
+Python + FFmpeg media pipeline, packaged as a container and run as a suspended Kubernetes CronJob, triggered on demand.
 
 Planned flow:
 
